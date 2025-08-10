@@ -1,0 +1,16 @@
+# Core parsing & image libs
+python-pptx>=0.6.23
+Pillow>=10.0.0
+
+# Gemini client
+google-generativeai>=0.4.0
+
+# Convenience + env
+python-dotenv>=1.0.0
+
+# Optional / recommended for OCR (install Tesseract separately)
+pytesseract>=0.3.10
+
+# (Optional extras you may add later)
+# scikit-learn>=1.2.0     # for TF-IDF similarity / clustering if you extend
+# rapidfuzz>=2.0.0       # for faster fuzzy matching

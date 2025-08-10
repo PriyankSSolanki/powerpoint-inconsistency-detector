@@ -1,0 +1,202 @@
+POWERPOINT INCONSISTENCY ANALYSIS REPORT
+============================================================
+Analysis Date: 2025-08-10 16:08:03
+Total Slides: 7
+Inconsistencies Found: 14
+Confidence Threshold: 50.0%
+
+HIGH SEVERITY ISSUES (5)
+--------------------------------------------------
+
+1. [INC-0364] NUMERICAL INCONSISTENCY
+   Slides: 1, 2, 3, 4
+   Confidence: 95.0%
+   Description: Inconsistent time savings calculations. Slide 1 & 2 state 15-20 minutes saved per slide. Slides 3 & 4 detail monthly savings, but don't connect to the per-slide savings.
+   Suggested Action: Reconcile the per-slide time savings with the monthly time savings. Provide the number of slides created per month to justify the calculations.
+   Details:
+     slide1_savings: 15 mins/slide
+     slide2_savings: 20 mins/slide
+     slide3_monthly_savings: 10+12+8+6+4 = 40 hours
+     slide4_monthly_savings: Implies 40 hours from slide 3
+
+2. [INC-0368] NUMERICAL INCONSISTENCY
+   Slides: 7
+   Confidence: 95.0%
+   Description: Inconsistent time units for saved time: hours/month vs. hours/year.
+   Suggested Action: Standardize the time unit (either hours/month or hours/year) for all initiatives to allow for accurate comparison and aggregation.
+   Details:
+     Automated Content Generation: 12 hours saved per consultant/month
+     Streamlined Chart/Table Creation: 8 hours saved per consultant/month
+     Layout Optimization: 72 hours saved per consultant/year
+
+3. [INC-0058] NUMERICAL INCONSISTENCY
+   Slides: 3, 4
+   Confidence: 89.6%
+   Description: Numerical discrepancy: '50' vs '12'
+   Suggested Action: Verify if these numbers refer to the same metric/timeframe
+   Details:
+     value1: 50
+     value2: 12
+     context_similarity: 0.357
+     parsed_values: {'v1': 50.0, 'v2': 12.0}
+   Evidence:
+     Slide 3: "Noogat: 50 Hours Saved Per Consultant Monthly Key Time-Saving Areas in Slide Creation and Format..."
+     Slide 4: "delivers significant monthly time savings: 10 hours from automated formatting, 12 hours from AI-powered content generation, and 8 hours from streamlined chart and tabl..."
+     Slide 3: "Noogat: 50 Hours Saved Per Consultant Monthly Key Time-Saving Areas in Slide Creation and Format..."
+
+4. [INC-0070] NUMERICAL INCONSISTENCY
+   Slides: 3, 7
+   Confidence: 87.8%
+   Description: Numerical discrepancy: '50' vs '12'
+   Suggested Action: Verify if these numbers refer to the same metric/timeframe
+   Details:
+     value1: 50
+     value2: 12
+     context_similarity: 0.426
+     parsed_values: {'v1': 50.0, 'v2': 12.0}
+   Evidence:
+     Slide 3: "Noogat: 50 Hours Saved Per Consultant Monthly Key Time-Saving Areas in Slide Creation and Format..."
+     Slide 7: "mated Content Generation Automate data analysis & content for slides Delivering 12 hours saved per consultant/month Ongoing Streamlined Chart/Table Creation Accelerate..."
+     Slide 3: "Noogat: 50 Hours Saved Per Consultant Monthly Key Time-Saving Areas in Slide Creation and Format..."
+
+5. [INC-0003] NUMERICAL INCONSISTENCY
+   Slides: 1, 4
+   Confidence: 87.3%
+   Description: Numerical discrepancy: '15' vs '1'
+   Suggested Action: Verify if these numbers refer to the same metric/timeframe
+   Details:
+     value1: 15
+     value2: 1
+     context_similarity: 0.309
+     parsed_values: {'v1': 15.0, 'v2': 1.0}
+   Evidence:
+     Slide 1: "is enables consultants to focus on high-value tasks and deliver results faster. 15 mins Saved in lost productivity hours Saved per slide created..."
+     Slide 4: "from limited chart/table support. Gamma provides minimal monthly time savings: 1 hour from basic formatting, 2 hours from content generation, and 0.5 hours from..."
+     Slide 1: "is enables consultants to focus on high-value tasks and deliver results faster. 15 mins Saved in lost productivity hours Saved per slide created..."
+
+============================================================
+MEDIUM SEVERITY ISSUES (6)
+--------------------------------------------------
+
+1. [INC-0365] NUMERICAL INCONSISTENCY
+   Slides: 1, 2
+   Confidence: 90.0%
+   Description: Inconsistent impact figures. Slide 1 states $2M impact, while Slide 2 states $3M saved.
+   Suggested Action: Verify and correct the impact figure to be consistent across all slides.
+   Details:
+     slide1_impact: $2M
+     slide2_impact: $3M
+
+2. [INC-0014] NUMERICAL INCONSISTENCY
+   Slides: 2, 4
+   Confidence: 89.0%
+   Description: Numerical discrepancy: '20' vs '12'
+   Suggested Action: Verify if these numbers refer to the same metric/timeframe
+   Details:
+     value1: 20
+     value2: 12
+     context_similarity: 0.335
+     parsed_values: {'v1': 20.0, 'v2': 12.0}
+   Evidence:
+     Slide 2: "ed productivity. Automates data analysis, content generation, and slide design. 20 mins saved per slide created Enabled focus on high-value tasks and faster delivery M..."
+     Slide 4: "delivers significant monthly time savings: 10 hours from automated formatting, 12 hours from AI-powered content generation, and 8 hours from streamlined chart and tabl..."
+     Slide 2: "ed productivity. Automates data analysis, content generation, and slide design. 20 mins saved per slide created Enabled focus on high-value tasks and faster delivery M..."
+
+3. [INC-0367] NUMERICAL INCONSISTENCY
+   Slides: 2
+   Confidence: 80.0%
+   Description: Slide 2 claims '3x faster deck creation speed'. This claim is not substantiated with data or comparison points.
+   Suggested Action: Provide data or context to support the '3x faster' claim, or remove the claim if it cannot be substantiated.
+   Details:
+     claim: 3x faster deck creation speed
+     evidence: None provided
+
+4. [INC-0004] NUMERICAL INCONSISTENCY
+   Slides: 1, 7
+   Confidence: 79.3%
+   Description: Numerical discrepancy: '15' vs '4'
+   Suggested Action: Verify if these numbers refer to the same metric/timeframe
+   Details:
+     value1: 15
+     value2: 4
+     context_similarity: 0.309
+     parsed_values: {'v1': 15.0, 'v2': 4.0}
+   Evidence:
+     Slide 1: "is enables consultants to focus on high-value tasks and deliver results faster. 15 mins Saved in lost productivity hours Saved per slide created..."
+     Slide 7: "g Review & QA Efficiency Reduce repetitive tasks & manual processing Delivering 4 hours saved per consultant/month Ongoing Overall Productivity Gains Enable focus on h..."
+     Slide 1: "is enables consultants to focus on high-value tasks and deliver results faster. 15 mins Saved in lost productivity hours Saved per slide created..."
+
+5. [INC-0011] NUMERICAL INCONSISTENCY
+   Slides: 2, 7
+   Confidence: 78.9%
+   Description: Numerical discrepancy: '$3M' vs '$2M'
+   Suggested Action: Verify if these numbers refer to the same metric/timeframe
+   Details:
+     value1: $3M
+     value2: $2M
+     context_similarity: 0.381
+     parsed_values: {'v1': 3000000.0, 'v2': 2000000.0}
+   Evidence:
+     Slide 2: "r Approach Key Outcomes Noogat's AI-powered solution streamlines deck creation. $3M saved in lost productivity hours annually Improved overall team efficiency & re..."
+     Slide 7: "month Ongoing Overall Productivity Gains Enable focus on high-value tasks; save $2M in lost productivity Achieving 15 minutes saved per slide created Ongoing..."
+     Slide 2: "ed productivity. Automates data analysis, content generation, and slide design. 20 mins saved per slide created Enabled focus on high-value tasks and faster delivery M..."
+
+6. [INC-0012] NUMERICAL INCONSISTENCY
+   Slides: 2, 3
+   Confidence: 74.0%
+   Description: Numerical discrepancy: '20' vs '8'
+   Suggested Action: Verify if these numbers refer to the same metric/timeframe
+   Details:
+     value1: 20
+     value2: 8
+     context_similarity: 0.306
+     parsed_values: {'v1': 20.0, 'v2': 8.0}
+   Evidence:
+     Slide 2: "ed productivity. Automates data analysis, content generation, and slide design. 20 mins saved per slide created Enabled focus on high-value tasks and faster delivery M..."
+     Slide 3: "les from raw data, ensuring accuracy and visual appeal. This saves an estimated 8 hours per consultant monthly. Noogat optimizes slide layouts for clarity and impact,..."
+     Slide 2: "ed productivity. Automates data analysis, content generation, and slide design. 20 mins saved per slide created Enabled focus on high-value tasks and faster delivery M..."
+
+============================================================
+LOW SEVERITY ISSUES (3)
+--------------------------------------------------
+
+1. [INC-0281] NUMERICAL INCONSISTENCY
+   Slides: 4, 7
+   Confidence: 89.7%
+   Description: Numerical discrepancy: '10' vs '8'
+   Suggested Action: Verify if these numbers refer to the same metric/timeframe
+   Details:
+     value1: 10
+     value2: 8
+     context_similarity: 0.323
+     parsed_values: {'v1': 10.0, 'v2': 8.0}
+   Evidence:
+     Slide 4: "ime Savings in Slide Creation Noogat delivers significant monthly time savings: 10 hours from automated formatting, 12 hours from AI-powered content generation, and 8 h..."
+     Slide 7: "reamlined Chart/Table Creation Accelerate visual data representation Delivering 8 hours saved per consultant/month Ongoing Layout Optimization Automate slide design &..."
+     Slide 4: "ime Savings in Slide Creation Noogat delivers significant monthly time savings: 10 hours from automated formatting, 12 hours from AI-powered content generation, and 8 h..."
+
+2. [INC-0366] NUMERICAL INCONSISTENCY
+   Slides: 3, 4
+   Confidence: 75.0%
+   Description: Slide 3 lists 5 key areas of time saving, totaling 40 hours. Slide 4 only mentions 3 of those areas (formatting, content generation, chart/table creation) when comparing to competitors.
+   Suggested Action: Ensure that the comparison in Slide 4 includes all relevant areas of time savings, or clarify why only these three are being compared.
+   Details:
+     slide3_areas: ['Automated Formatting (10 hours)', 'Content Generation (12 hours)', 'Chart & Table Creation (8 hours)', 'Layout Optimization (6 hours)', 'Review & QA...
+     slide4_areas: ['automated formatting', 'AI-powered content generation', 'streamlined chart and table creation']
+
+3. [INC-0001] NUMERICAL INCONSISTENCY
+   Slides: 1, 2
+   Confidence: 60.0%
+   Description: Numerical discrepancy: '15' vs '20'
+   Suggested Action: Verify if these numbers refer to the same metric/timeframe
+   Details:
+     value1: 15
+     value2: 20
+     context_similarity: 0.315
+     parsed_values: {'v1': 15.0, 'v2': 20.0}
+   Evidence:
+     Slide 1: "is enables consultants to focus on high-value tasks and deliver results faster. 15 mins Saved in lost productivity hours Saved per slide created..."
+     Slide 2: "ed productivity. Automates data analysis, content generation, and slide design. 20 mins saved per slide created Enabled focus on high-value tasks and faster delivery M..."
+     Slide 1: "is enables consultants to focus on high-value tasks and deliver results faster. 15 mins Saved in lost productivity hours Saved per slide created..."
+
+============================================================
